@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             val alasStr = etAlas.text.toString()
             val tinggiStr = etTinggi.text.toString()
 
-            // Validasi agar tidak error jika input kosong
+
             if (alasStr.isEmpty() || tinggiStr.isEmpty()) {
                 Toast.makeText(this, "Alas dan Tinggi tidak boleh kosong!", Toast.LENGTH_SHORT).show()
                 Log.e(TAG, "Error: Input segitiga kosong!") // Contoh log error
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             val alas = alasStr.toDouble()
             val tinggi = tinggiStr.toDouble()
 
-            // Rumus Luas Segitiga
+
             val luas = 0.5 * alas * tinggi
 
             val hasilTeks = "Luas Segitiga: $luas"
