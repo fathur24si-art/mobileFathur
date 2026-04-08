@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvJudulMateri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Misi"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#4B4B4B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardInteraktif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#E5E5E5"
+        app:cardBackgroundColor="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        app:rippleColor="#8058CC02"
+        app:layout_constraintTop_toBottomOf="@id/tvJudulMateri">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Intent"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#1CB0F6"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim Data Antar Halaman"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#4B4B4B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Ketuk kartu ini untuk mengirimkan data ke halaman tujuan secara aman dan menyenangkan!"
+                android:textColor="#666363"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBalik"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="KEMBALI"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#AFB6C1"
+        app:backgroundTint="#00000000"
+        app:strokeColor="#E5E5E5"
+        app:strokeWidth="2dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
