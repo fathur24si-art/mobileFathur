@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_badge" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Account"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/poppins_bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang kembali! Join us and explore new possibilities."
+        android:textSize="14sp"
+        android:textColor="#8A8A8A"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        android:hint="balamia@gmail.com"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"
+        android:textColorHint="#A0A0A0"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#A0A0A0"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="13sp"
+        android:textColor="#0D6EFD"
+        android:textAlignment="viewEnd"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins_bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button_blue"
+        android:text="Login now"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp" />
+
+</LinearLayout>
